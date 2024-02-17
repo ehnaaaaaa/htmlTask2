@@ -5,13 +5,12 @@
         <meta name="viewport"
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Slaughter to Prevail - Concerts</title>
+        <title>Slaughter to Prevail - Albums</title>
         <style>
             body {
                 background-image: url('source/background.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
-                min-height: 100vh;
             }
 
             .navElemText{
@@ -63,11 +62,6 @@
                     height: 400px;
                     margin: 20px;
                 }
-
-                .lowMenu {
-                    flex-direction: row;
-                    justify-content: space-around;
-                }
             }
 
             @media screen and (max-width: 720px) {
@@ -91,15 +85,9 @@
                     margin: 10px;
                 }
 
-                .lowMenu {
-                    flex-direction: column;
-                }
-
-                .lowMenu {
-                    text-align: center;
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-around;
+                img {
+                    width: 33%;
+                    height: 33%;
                 }
             }
 
@@ -107,6 +95,7 @@
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-around;
+                    text-align: center;
                 }
 
             h1 {
@@ -130,80 +119,60 @@
                 text-align: center;
             }
 
-            .lowMenu {
-                text-align: center;
-            }
-
-            .low {
-                text-decoration: none;
-                color: white;
-                position: absolute;
-                bottom: 0;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                font-size: 24px;
-            }
-
-            table {
-                border-collapse: collapse;
+            .center {
                 width: 100%;
+                display: inline-block;
             }
 
-            th, td {
-                text-align: left;
-                padding: 8px;
-                border-bottom: 1px solid white;
+            .list {
+                display: inline-block;
             }
 
-            th {
-                font-size: 24px;
+            li {
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                color: white;
-            }
-
-            td {
                 font-size: 18px;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 color: white;
+                text-align: left;
+            }
+
+            img {
+                width: 50%;
+                height: 50%;
             }
         </style>
     </head>
     <body>
         <div class="navMenu">
-            <a class="navElemText" href="concetrs.html">Концерты</a>
-            <a class="navElem" href="index.html" style="float:left;"><img src="source/logo.jpg"></a>
+            <a class="navElemText" href="concerts.html">Концерты</a>
+            <a class="navElem" href="index.html"><img src="source/logo.jpg"></a>
             <a class="navElemText" href="buy.html">Купить билет</a>
         </div>
-        <br><br><br><br>
-        <h1>Концерты</h1>
-        <br><br>
-        <table>
-            <thread>
-                <tr>
-                    <th>Число</th>
-                    <th>Место</th>
-                    <th>Стоимость</th>
-                </tr>
-            </thread>
-            <tbody>
-                <tr>
-                    <td>26 апреля 2024</td>
-                    <td>Лос Анджелесс</td>
-                    <td>49$</td>
-                </tr>
-                <tr>
-                    <td>30 апреля 2024</td>
-                    <td>Денвер</td>
-                    <td>49$</td>
-                </tr>
-                <tr>
-                    <td>15 мая 2024</td>
-                    <td>Бруклин</td>
-                    <td>49$</td>
-                </tr>
-            </tbody>
-        </table> 
-        <div class="lowMenu">
-            <a class="low" href="albums.html">Альбомы</a>
-        </div>       
+        <div class="main">
+            <div class="wrapper">
+                <h1>Альбомы</h1>
+                <div class="center">
+                    <ul class="list"><br>
+                        <li>Chapters of Misery (EP) (2016)</li><br>
+                        <img src="source/chapters_of_misery.jpg">
+                        <li>Misery Sermon (2017)</li><br>
+                        <img src="source/misery_sermons.jpg">
+                        <li>Kostolom (2021)</li><br>
+                        <img src="source/kostolom.jpg">
+                    </ul>
+                </div>
+                <br><br><br><br><br><br><br><br><br>
+                <h1>Синглы</h1>
+                <div class="center">
+                    <ul class="list"><br>
+                        <li>Viking (2023)</li><br>
+                        <img src="source/viking.jpg">
+                        <li>1984 (2022)</li><br>
+                        <img src="source/1984.jpg">
+                        <li>King (2017)</li><br>
+                        <img src="source/king.jpg">
+                    </ul>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
