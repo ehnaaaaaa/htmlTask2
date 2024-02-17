@@ -5,6 +5,64 @@
         <meta name="viewport"
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Some site</title>
+        <style>
+            body {
+                background-image: url('source/background.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                min-height: 100vh;
+            }
+
+            .navElem{
+                font-size: 24px;
+                color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                border: 1;
+                text-decoration: none;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .navMenu {
+                width: 100%;
+                display: flex;
+                background-color: rgb(128, 128, 128, 0.25);
+            }
+
+            @media screen and (min-width: 720px) {
+                .navMenu {
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+
+                .navElem {
+                    padding: 15px;
+                }
+            }
+
+            @media screen and (max-width: 720px) {
+                .navMenu {
+                    flex-direction: column;
+                }
+
+                .navElem {
+                    margin-bottom: 5px;
+                    padding: 5px;
+                    text-align: center;
+                }
+            }
+        </style>
+        <title>Slaughter to Prevail</title>
     </head>
+    <body>
+        <div class="navMenu">
+            <a class="navElem" href="#">Концерты</a>
+            <a class="navElem" href="#">Участники</a>
+            <a class="navElem" href="#">Купить билет</a>
+        </div>
+    </body>
 </html>
